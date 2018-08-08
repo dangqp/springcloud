@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/shiro-rbac-demo-master/shiro-rbac-demo.iml" filepath="$PROJECT_DIR$/shiro-rbac-demo-master/shiro-rbac-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mongodb/springboot-mongodb.iml" filepath="$PROJECT_DIR$/springboot-mongodb/springboot-mongodb.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-shiro/springboot-shiro.iml" filepath="$PROJECT_DIR$/springboot-shiro/springboot-shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-webflux/springboot-webflux.iml" filepath="$PROJECT_DIR$/springboot-webflux/springboot-webflux.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_cache/springboot_cache.iml" filepath="$PROJECT_DIR$/springboot_cache/springboot_cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot_config_server/springboot_config_server.iml" filepath="$PROJECT_DIR$/springboot_config_server/springboot_config_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot_congfigclient/springboot_congfigclient.iml" filepath="$PROJECT_DIR$/springboot_congfigclient/springboot_congfigclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot_customer/springboot_customer.iml" filepath="$PROJECT_DIR$/springboot_customer/springboot_customer.iml" />

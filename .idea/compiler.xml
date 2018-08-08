@@ -7,7 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="shiro-rbac-demo" />
+        <module name="springboot-mongodb" />
         <module name="springboot-shiro" />
+        <module name="springboot-webflux" />
+        <module name="springboot_cache" />
         <module name="springboot_config_server" />
         <module name="springboot_congfigclient" />
         <module name="springboot_customer" />
@@ -18,7 +21,10 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="shiro-rbac-demo" target="1.5" />
+      <module name="springboot-mongodb" target="1.8" />
       <module name="springboot-shiro" target="1.8" />
+      <module name="springboot-webflux" target="1.8" />
+      <module name="springboot_cache" target="1.8" />
       <module name="springboot_config_server" target="1.8" />
       <module name="springboot_congfigclient" target="1.8" />
       <module name="springboot_customer" target="1.8" />
