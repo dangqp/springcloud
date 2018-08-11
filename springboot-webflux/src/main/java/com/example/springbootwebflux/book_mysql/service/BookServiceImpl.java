@@ -10,6 +10,8 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.util.List;
+
 /**
  * Title:com.example.springbootwebflux.book_mysql.service
  * Description:
@@ -57,5 +59,9 @@ public class BookServiceImpl {
         return Mono.create(bookMonoSink -> {
             bookMonoSink.success(book);
         });
+    }
+
+    public List<Book> findAllBook(){
+        return bookMapper.selectBook();
     }
 }
