@@ -64,7 +64,7 @@ public class BookServiceImpl {
         book.setNumber(22);
 
         books.add(book);
-        int i = bookMapper.updateBatch2(books);
+        int i = bookMapper.updateBatch1(books);
         return Arrays.asList(i);
     }
 }

@@ -190,6 +190,10 @@
         <foreach collection="list" index="index" item="item" separator=" " open="case book_id" close="end">
             WHEN #{item.bookId} then #{item.name}
         </foreach>
+        ,number =
+        <foreach collection="list" index="index" item="item" separator=" " open="case book_id" close="end">
+            WHEN #{item.bookId} then #{item.number}
+        </foreach>
         where book_id in
         <foreach collection="list" item="item" separator="," index="index" open="(" close=")">
             #{item.bookId}
@@ -203,6 +207,10 @@
                 <if test="item.name!=null">
                     WHEN #{item.bookId} then #{item.name}
                 </if>
+            </foreach>
+            ,number =
+            <foreach collection="list" index="index" item="item" separator=" " open="case book_id" close="end">
+                WHEN #{item.bookId} then #{item.number}
             </foreach>
         </trim>
         where book_id in

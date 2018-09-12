@@ -6,7 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="java-emo" />
         <module name="shiro-rbac-demo" />
+        <module name="springboot-aop-log" />
+        <module name="springboot-batch" />
+        <module name="springboot-docker" />
         <module name="springboot-mongodb" />
         <module name="springboot-shiro" />
         <module name="springboot-webflux" />
@@ -16,11 +20,17 @@
         <module name="springboot_customer" />
         <module name="springboot_demo" />
         <module name="springboot_eruka" />
-        <module name="zipkin-server" />
+        <module name="zipkin-consumer1" />
+        <module name="zipkin-consumer2" />
+        <module name="zipkn-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="java-emo" target="1.8" />
       <module name="shiro-rbac-demo" target="1.5" />
+      <module name="springboot-aop-log" target="1.8" />
+      <module name="springboot-batch" target="1.8" />
+      <module name="springboot-docker" target="1.8" />
       <module name="springboot-mongodb" target="1.8" />
       <module name="springboot-shiro" target="1.8" />
       <module name="springboot-webflux" target="1.8" />
@@ -31,7 +41,10 @@
       <module name="springboot_demo" target="1.8" />
       <module name="springboot_eruka" target="1.8" />
       <module name="springshiro" target="1.5" />
+      <module name="zipkin-consumer1" target="1.8" />
+      <module name="zipkin-consumer2" target="1.8" />
       <module name="zipkin-server" target="1.8" />
+      <module name="zipkn-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

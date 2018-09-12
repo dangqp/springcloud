@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/java-emo/java-emo.iml" filepath="$PROJECT_DIR$/java-emo/java-emo.iml" />
       <module fileurl="file://$PROJECT_DIR$/shiro-rbac-demo-master/shiro-rbac-demo.iml" filepath="$PROJECT_DIR$/shiro-rbac-demo-master/shiro-rbac-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-aop-log/springboot-aop-log.iml" filepath="$PROJECT_DIR$/springboot-aop-log/springboot-aop-log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-batch/springboot-batch.iml" filepath="$PROJECT_DIR$/springboot-batch/springboot-batch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-docker/springboot-docker.iml" filepath="$PROJECT_DIR$/springboot-docker/springboot-docker.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-mongodb/springboot-mongodb.iml" filepath="$PROJECT_DIR$/springboot-mongodb/springboot-mongodb.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-shiro/springboot-shiro.iml" filepath="$PROJECT_DIR$/springboot-shiro/springboot-shiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-webflux/springboot-webflux.iml" filepath="$PROJECT_DIR$/springboot-webflux/springboot-webflux.iml" />
@@ -12,7 +16,9 @@
       <module fileurl="file://$PROJECT_DIR$/springboot_customer/springboot_customer.iml" filepath="$PROJECT_DIR$/springboot_customer/springboot_customer.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot_demo/springboot_demo.iml" filepath="$PROJECT_DIR$/springboot_demo/springboot_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot_eruka/springboot_eruka.iml" filepath="$PROJECT_DIR$/springboot_eruka/springboot_eruka.iml" />
-      <module fileurl="file://$PROJECT_DIR$/zipkin-server/zipkin-server.iml" filepath="$PROJECT_DIR$/zipkin-server/zipkin-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zipkin-consumer1/zipkin-consumer1.iml" filepath="$PROJECT_DIR$/zipkin-consumer1/zipkin-consumer1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zipkin-consumer2/zipkin-consumer2.iml" filepath="$PROJECT_DIR$/zipkin-consumer2/zipkin-consumer2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zipkn-server/zipkn-server.iml" filepath="$PROJECT_DIR$/zipkn-server/zipkn-server.iml" />
     </modules>
   </component>
 </project>
