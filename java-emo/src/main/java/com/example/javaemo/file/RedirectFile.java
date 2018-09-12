@@ -24,6 +24,7 @@ public class RedirectFile {
             System.out.println("这是重定向测试");
             //向表中输出一个对象
             System.out.println(new RedirectFile());
+            System.out.println("测试车位都会发生款到发货");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
