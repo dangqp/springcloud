@@ -21,7 +21,7 @@ public class RedirectFile {
             PrintStream ps =new PrintStream(new FileOutputStream("out.txt"));
             //重定向
             System.setOut(ps);
-            System.out.println("这是重定向测试");
+            System.out.println("这是重定向 测试");
             //向表中输出一个对象
             System.out.println(new RedirectFile());
         } catch (FileNotFoundException e) {
