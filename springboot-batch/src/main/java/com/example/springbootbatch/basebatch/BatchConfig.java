@@ -28,6 +28,11 @@ public class BatchConfig {
 
     /***
      *用于注册
+     * Job Repository来存储Job执行期的元数据（这里的元数据是指Job Instance、Job Execution、Job Parameters、
+     * Step Execution、Execution Context等数据），并提供两种默认实现。
+     *
+     * 一种是存放在内存中；另一种将元数据存放在数据库中。通过将元数据存放在数据库中，可以随时监控批处理Job的执行状态。
+     * Job执行结果是成功还是失败，并且使得在Job失败的情况下重新启动Job成为可能。Step表示作业中的一个完整步骤，一个Job可以有一个或者多个Step组成。
      * @param dataSource
      * @param transactionManager
      * @return

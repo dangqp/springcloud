@@ -16,12 +16,9 @@ import org.springframework.batch.item.ItemWriter;
 import org.springframework.batch.item.database.JdbcPagingItemReader;
 import org.springframework.batch.item.database.Order;
 import org.springframework.batch.item.database.support.MySqlPagingQueryProvider;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.task.SimpleAsyncTaskExecutor;
 
-import javax.sql.DataSource;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -39,10 +36,10 @@ import java.util.Map;
 public class DataToBatchItemReader extends BaseBatchConfig {
     private final int PAGE_ZIAE = 10;
 
-    @Autowired
+  /*  @Autowired
     DataSource dataSource;
     @Autowired
-    BookItemWriteListener writeListener;
+    BookItemWriteListener writeListener;*/
 
     int i = 0;
 
@@ -93,6 +90,12 @@ public class DataToBatchItemReader extends BaseBatchConfig {
         return new BookItemWriteListener();
     }*/
 
+    /**
+     * springbatch默认是单线程的，但提供了对线程池的支持
+     * 使用tasklet的task-executor属性可以很容易的将普通的step转成多线程的step。
+     * @param writeListener
+     * @return
+     */
     @Bean
     @JobScope
     public Step bookDealStep(BookItemWriteListener writeListener){
@@ -102,8 +105,17 @@ public class DataToBatchItemReader extends BaseBatchConfig {
                 .processor(processor())//对数据进行处理
                 .listener(writeListener)
                 .writer(bookItemWriter())//写操作
-                .taskExecutor(new SimpleAsyncTaskExecutor())
-                .throttleLimit(20)
+                /**
+                 * 指定了一个异步任务执行器 SimpleAsyncTaskExecutor，该
+                 * 执行器将会按照配置创建指定数目的线程来进行数据处理。通过这种方式，
+                 * 避免了我们手动创建并管理线程的工作，使我们只需要关注业务处理本身
+                 */
+                .taskExecutor(new SimpleAsyncTaskExecutor())//设置Step以并发方式执行 SimpleAsyncTaskExecutor为异步任务执行器
+                /**
+                 * 注意在step中并发使用连接池资源时可能会有一些限制,
+                 * 例如数据库连接池 DataSource. 请确保连接池中的资源数量大于或等于并发线程的数量
+                 */
+                .throttleLimit(20) //设置并发线程数
                 .build();
     }
 
@@ -112,7 +124,6 @@ public class DataToBatchItemReader extends BaseBatchConfig {
 
         JobBuilder jobBuilder = jobBuilderFactory.get("booksJob").incrementer(new RunIdIncrementer()).listener(listener);
         FlowJobBuilder flowJobBuilder = new FlowJobBuilder(jobBuilder);
-
         return jobBuilderFactory.get("booksJob")
                 .incrementer(new RunIdIncrementer())
                 .listener(listener)

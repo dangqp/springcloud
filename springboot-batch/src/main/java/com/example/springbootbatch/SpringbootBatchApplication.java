@@ -37,4 +37,5 @@ public class SpringbootBatchApplication {
     public DataSource dataSource(){
         return defaultCurrDataSourceProperties().initializeDataSourceBuilder().build();
     }
+
 }

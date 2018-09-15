@@ -41,7 +41,7 @@ public class BookBatchService {
         //for (Book book : books) {
             // batch parameter
             JobParameters jobParameters = new JobParametersBuilder()
-                    //.addLong("bookId",book.getBookId())
+                    .addString("booksJob","booksJob")
                     .toJobParameters();
             JobLauncher jobLauncher = applicationContext.getBean(JobLauncher.class);
             try {

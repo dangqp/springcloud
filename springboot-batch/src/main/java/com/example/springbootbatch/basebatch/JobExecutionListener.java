@@ -40,10 +40,19 @@ public class JobExecutionListener extends JobExecutionListenerSupport {
     public void beforeJob(JobExecution jobExecution) {
         super.beforeJob(jobExecution);
         System.out.println("z在job开始之前处理逻辑");
-        /*while (true){
-            boolean trueLoop = isTrueLoop();
-            if (trueLoop){
-                break;
+        JobParameters jobParameters = jobExecution.getJobParameters();
+        String booksJob = jobParameters.getString("booksJob");
+       /* boolean flag = false;
+        if (!flag){
+            while (true){
+                try {
+                    Thread.sleep(2000);
+                    flag = true;
+                    if (flag)
+                        break;
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         }*/
 

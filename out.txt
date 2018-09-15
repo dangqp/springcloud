@@ -1,2 +1,3 @@
 这是重定向测试
-com.example.javaemo.file.RedirectFile@4b1210ee
+com.example.javaemo.file.RedirectFile@4fccd51b
+测试车位都会发生款到发货

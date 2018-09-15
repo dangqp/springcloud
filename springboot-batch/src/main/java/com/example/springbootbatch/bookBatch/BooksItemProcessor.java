@@ -13,6 +13,12 @@ import org.springframework.batch.item.ItemProcessor;
  * @version 1.0
  * @created 2018/09/12  10:29
  */
+
+/**
+ * public interface ItemProcessor<I, O> {
+ *     O process(I var1) throws Exception;
+ * }
+ */
 public class BooksItemProcessor implements ItemProcessor<Book,Book> {
 
     /**

@@ -30,6 +30,7 @@ import org.springframework.core.task.SimpleAsyncTaskExecutor;
  * @created 2018/09/12  10:45
  */
 //@BatchAnnotation
+@Deprecated
 public class BookDataToBatch extends BaseBatchConfig {
 
     /**
