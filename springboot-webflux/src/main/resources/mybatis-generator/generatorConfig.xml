@@ -35,7 +35,7 @@
 			<property name="enableSubPackages" value="true"/>
 		</javaClientGenerator>
 
-		<table tableName="book" modelType="flat"
+		<table tableName="book_201809" modelType="flat"
 			   enableCountByExample="false"
 			   enableUpdateByExample="false"
 			   enableDeleteByExample="false"
