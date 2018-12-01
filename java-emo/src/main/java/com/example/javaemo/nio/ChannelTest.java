@@ -28,7 +28,7 @@ public class ChannelTest {
             //字符集
             //Charset gbk = Charset.forName("GBK");  //java.nio.charset.MalformedInputException: Input length = 1
             Charset gbk = Charset.forName("UTF-8");
-            outChannel.write(map);//实现文件内容的赋值
+            outChannel.write(map);//实现文件内容的复制
             //复原原有的limit、position位置
             map.clear();
             CharsetDecoder charsetDecoder = gbk.newDecoder();

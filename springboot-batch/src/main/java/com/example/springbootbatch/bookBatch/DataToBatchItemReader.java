@@ -100,7 +100,7 @@ public class DataToBatchItemReader extends BaseBatchConfig {
     @JobScope
     public Step bookDealStep(BookItemWriteListener writeListener){
         return stepBuilderFactory.get("bookDealStep")
-                .<Book,Book>chunk(10)
+                .<Book,Book>chunk(10)//每次提交的数据数
                 .reader(booksItemReader())//数据来源的方法
                 .processor(processor())//对数据进行处理
                 .listener(writeListener)
