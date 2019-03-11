@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Configuration;
 /**
  * Title:com.example.springbootbatch.bookBatch
  * Copyright: Copyright (c) 2018
- * Company: 北京思特奇信息技术股份有限公司
  * 整合注解@EnableBatchProcessing和@ComponentScan(basePackageClasses = DefaultBatchConfigurer.class)
  * @author dangqp
  * @version 1.0

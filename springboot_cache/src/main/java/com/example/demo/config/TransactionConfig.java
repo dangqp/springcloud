@@ -13,7 +13,6 @@ import javax.sql.DataSource;
  * Title:com.example.demo.config
  * Description: springboot事务
  * Copyright: Copyright (c) 2018
- * Company: 北京思特奇信息技术股份有限公司
  *
  * @author dangqp
  * @version 1.0

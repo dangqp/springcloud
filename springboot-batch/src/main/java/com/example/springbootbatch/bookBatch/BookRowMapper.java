@@ -11,7 +11,6 @@ import java.sql.SQLException;
  * Title:com.example.springbootbatch.bookBatch
  * Description: 处理实体与数据库查询结果不一致问题
  * Copyright: Copyright (c) 2018
- * Company: 北京思特奇信息技术股份有限公司
  *
  * @author dangqp
  * @version 1.0
